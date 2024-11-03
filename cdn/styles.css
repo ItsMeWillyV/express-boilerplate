@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*
+    Main styles
+*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*
+    Header & Footer
+*/
+
+header {
+    width: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.25em 0em 0.25em 0em;
+}
+
+header nav a {
+    display: block;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* 
+    Misc
+*/
+
+img, .unselectable {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.pixel {
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+}
