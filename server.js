@@ -64,7 +64,7 @@ app.use((req, res, next) => {
 	if (req.accepts('html')) {
 		let url = req.url.split("/").slice(1);
 		if (url[0] != "private" && url[0] != "favicon.ico") {
-			url = url.join("/");
+			url = url.join("/").split("?")[0];
 			if (url == "") url = "home";
 			if (fs.existsSync(`${__dirname}/views/${url}.ejs`)) {
 				res.status(200);
