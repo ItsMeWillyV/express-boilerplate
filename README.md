@@ -4,5 +4,5 @@ A simple boilerplate for Express webservers.
 ## Setup
 To automatically install the required depedencies run:
 ```bash
-  npm run deploy
+  npm install
 ```
